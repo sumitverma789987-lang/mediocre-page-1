@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="src/output.css">
+
+
+</head>
+
+<body class="w-full h-full min-h-screen">
+    <header class=" w-full bg-[#007BFF]">
+
+        <nav class="w-full z-50 bg-[#007BFF]  text-white fixed ">
+            <div class="flex items-center justify-between py-4 px-4 ">
+                <h1 class="text-3xl font-semibold pl-12 max-sm:pl-0">
+                    chat<span class="text-blue-200 font-extralight">app</span>
+                </h1>
+                <ul class="hidden md:flex gap-10 items-center cursor-pointer font-medium text-white pr-9">
+                    <li><a class="text-white font-roboto">Product</a></li>
+                    <li><a class="text-white font-roboto">Services</a></li>
+                    <li><a class="text-white font-roboto">Contact</a></li>
+                    <li><a class="text-white font-roboto">Log In</a></li>
+                    <button
+                        class="bg-[#FFFFFF33] cursor-pointer px-5 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-[#1E71FF] transition">
+                        Try It Free
+                    </button>
+                </ul>
+                <button id="menu-btn" class="flex flex-col gap-1 md:hidden z-50">
+                    <span class="w-7 h-[3px] bg-white rounded transition"></span>
+                    <span class="w-7 h-[3px] bg-white rounded transition"></span>
+                    <span class="w-7 h-[3px] bg-white rounded transition"></span>
+                </button>
+
+            </div>
+            <div id="menu"
+                class="fixed  w-1/2 h-full   backdrop-blur-[6px] bg-gray-500/50 flex flex-col justify-start pt-28 items-end gap-8 pr-5 text-lg font-medium transition-all duration-300 md:hidden z-50">
+
+                <a class="font-roboto text-white">Product</a>
+                <a class="font-roboto text-white">Services</a>
+                <a class="font-roboto text-white">Contact</a>
+                <a class="font-roboto text-white">Log In</a>
+
+                <button
+                    class="bg-white/30 text-white px-6 py-2 cursor-pointer font-roboto rounded-full text-sm font-semibold shadow-lg">
+                    Try It Free
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <section class="flex flex-col md:flex-row justify-between min-h-screen text-white 
+  px-6 sm:px-12 md:px-20 items-center bg-[#007BFF] pt-24 md:pt-0">
+
+        <div class="pt-10 md:pt-0 text-center md:text-left">
+            <h1 class="text-[40px] sm:text-[55px] md:text-[75px] font-semibold font-poppins leading-tight">
+                Have your<br class="hidden md:inline"> best chat
+            </h1>
+
+            <p class="font-normal mt-3 text-[16px] sm:text-[18px] md:text-[21px] font-roboto text-white">
+                Fast, easy & unlimited team chat.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 min sm:gap-6 mt-10 justify-center   md:justify-start">
+                <button class="border border-white px-10 sm:px-12 py-2.5 rounded-full font-medium 
+        hover:bg-white hover:text-[#007bff] transition duration-200 hover:scale-110 min-w-[190px]">
+                    Try it Free
+                </button>
+
+                <button class="border border-white  sm:px-12 py-2.5 rounded-full font-medium 
+        hover:bg-white hover:text-[#007bff] transition duration-200 hover:scale-110   min-w-[190px] max-h-[45px]">
+                    Get a Demo
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center mt-10 md:mt-0 scale-95 sm:scale-100">
+            <img src="assets/hero.png" class="w-full max-w-xs sm:max-w-sm md:max-w-md" />
+        </div>
+
+    </section>
+
+
+    <section class="bg-white flex flex-col items-center justify-center text-center min-h-screen mx-auto h-full py-10 max-sm:py-10">
+
+        <h1 class="text-[32px] sm:text-[40px] md:text-[45px] font-medium font-poppins text-[#2B353E]">
+            Instant Team Chats
+        </h1>
+
+        <p class="font-normal text-[14px] sm:text-[16px] md:text-[18px] font-roboto text-center text-[#2B353EB2] mx-auto mt-3">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br>commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque <br>penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.<br> Nulla consequat massa.
+        </p>
+
+        <div class="mt-7 max-w-6xl mx-auto w-full">
+            <img src="assets/mockup.png" class="w-full" />
+        </div>
+    </section>
+
+
+    <section class="   flex flex-col h-full justify-center max-w-max min-h-screen  bg-[#E9F0FF]  py-30 gap-14 ">
+
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+
+            <div>
+                <img src="assets/Group 16.png" class="w-full" />
+            </div>
+
+            <div class=" flex flex-col   justify-center p-4">
+
+                <h1 class=" text-[45px] font-poppins font-medium text-[#2B353E]">
+                    Perfect Solution for<br>Small Businesses
+                </h1>
+
+                <p class="text-[#2B353EB2] text-[21px] font-roboto mt-10 ">
+                    Pricing plans that fit like a glove.
+                </p>
+
+                <div class="  mt-14 flex gap-10 max-[420px]:flex-col">
+                    <button
+                        class="min-w-[180px] py-2.5  rounded-full font-bold border border-[#1E71FF] text-[#1E71FF]  hover:bg-blue-600 hover:text-white transition duration-200 transform hover:scale-110">
+                        Try it Free
+                    </button>
+
+                    <button
+                        class=" min-w-[180px] py-2.5  rounded-full font-bold border border-[#1E71FF] text-[#1E71FF] hover:bg-blue-600 hover:text-white transition duration-200 transform hover:scale-110">
+                        Get a Demo
+                    </button>
+                </div>
+
+                <div class="mt-20">
+                    <span class="inline-block w-[150px] h-[1px] bg-[#2B353E]/[0.15]"></span>
+
+
+
+                    <div class="flex items-start mt-8 gap-4">
+
+                        <div class="flex gap-1">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
+                                    fill="#FBA229" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
+                                    fill="#FBA229" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
+                                    fill="#FBA229" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
+                                    fill="#FBA229" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
+                                    fill="#FBA229" />
+                            </svg>
+
+                        </div>
+
+                        <p class="text-[18px] text-[#2B353EB2] font-normal font-roboto">
+                            <span class="font-bold">5,200 businesses</span> use ChatApp<br>
+                            and they rate it as <span class="font-bold">5-stars.</span>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+   <footer class="bg-white pt-20 pb-10">
+    <div class="mx-auto px-8 max-w-7xl">
+
+        <div class="grid gap-12 md:grid-cols-6">
+
+            <!-- Left section -->
+            <div class="md:col-span-2">
+                <h1 class="text-[26px] font-semibold text-[#1E71FF]">
+                    chat<span class="text-[#1E71FF] font-extralight">app</span>
+                </h1>
+                <p class="mt-4 text-gray-500 text-sm leading-relaxed">
+                    The last team chat you <br>
+                    will ever need.
+                </p>
+            </div>
+
+            <div class="md:col-span-4 grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-normal font-poppins text-black mb-4 text-[18px]">Help</h3>
+                    <ul class="space-y-3 font-normal font-roboto text-[#2B353EB2] text-[15px]">
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Support</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Knowledgebase</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Tutorials</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-normal font-poppins text-black mb-4 text-[18px]">Features</h3>
+                    <ul class="space-y-3 font-normal font-roboto text-[#2B353EB2] text-[15px]">
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Screen Sharing</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">iOS & Android Apps</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">File Sharing</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">User Management</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-normal font-poppins text-black mb-4 text-[18px]">Company</h3>
+                    <ul class="space-y-3 font-normal font-roboto text-[#2B353EB2] text-[15px]">
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">About Us</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Careers</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-normal font-poppins text-black mb-4 text-[18px]">Company</h3>
+                    <ul class="space-y-3 font-normal font-roboto text-[#2B353EB2] text-[15px]">
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">About Us</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Careers</li>
+                        <li class="cursor-pointer hover:text-[#1E71FF] transition">Contact Us</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="mt-12 pt-6 text-gray-500 text-sm text-center md:text-left">
+            © Copyright ChatApp Inc.
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
